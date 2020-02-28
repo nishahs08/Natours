@@ -1,3 +1,20 @@
+
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilitilies";
+
+@import "layouts/grid";
+@import "pages/home";
+
+@import "components/button";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/card";
+@import "components/story";
 /*
 COLORS:
 
@@ -7,13 +24,7 @@ Dark green: #28b485
 
 */
 
-$color-primary : #7ed56f;
-$color-primary-medium : #55c57a;
-$color-primary-dark: #28b485;
 
-$color-grey-dark:#777;
-$color-black:#000;
-$color-white:#fff;
 
 
 
@@ -84,44 +95,6 @@ $color-white:#fff;
 	text-align: center;
 }
 
-@keyframes moveInLeft{
-	0%{
-		opacity: 0;
-		transform:translateX(-100px)
-	}
-	80%{
-		transform: translateX(10px);
-	}
-	100%{
-		opacity: 1;
-		transform: translate(0);
-	}
-}
-
-@keyframes moveInRight{
-	0%{
-		opacity: 0;
-		transform:translateX(+100px)
-	}
-	80%{
-		transform: translateX(-10px);
-	}
-	100%{
-		opacity: 1;
-		transform: translate(0);
-	}
-}
-
-@keyframes moveInButton{
-	0%{
-		opacity:0;
-		transform:translateX(100px);
-	}
-	100%{
-		opacity:1;
-		transform: translate(0);
-	}
-}
 
 .btn:link,
 .btn:visited{
